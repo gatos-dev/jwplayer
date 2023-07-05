@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='LINK_TO_YOUR_PLAYER'></script>
+    <script>jwplayer.key='YOUR_KEY';</script>
+</head>
+<body>
+    <div id="player">Loading the player...</div>
+    <script>
+        // Setup the player
+        const player = jwplayer('player').setup({
+            file: 'LINK_TO_YOUR_FILE.mp4'
+        });
+
+        // Listen to an event
+        player.on('pause', (event) => {
+            alert('Why did my user pause their video instead of watching it?');
+        });
+
+        // Call the API
+        const bumpIt = () => {
+            const vol = player.getVolume();
+            player.setVolume(vol + 10);
+        }
+        bumpIt();
+    </script>
+</body>
+</html>
+
+<!-- # Build once
+grunt
+# Complete Watch - builds JS, lints, and tests on each change
+grunt serve
+# Quick JS Watch - build only. Requires webpack-dev-server to be installed globally
+webpack-dev-server -w --env.debug --port 8888 --output-public-path /bin-debug/
+# Open the test page from another terminal window
+open http://localhost:8888/test/manual/ -->

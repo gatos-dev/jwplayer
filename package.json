@@ -28,6 +28,7 @@
     "esprima": "4.0.1",
     "fast-diff": "1.1.2",
     "focus-options-polyfill": "1.5.0",
+    "grunt": "1.6.1",
     "intersection-observer": "0.5.0",
     "jsdoc": "3.6.7",
     "karma": "6.3.12",
@@ -94,5 +95,8 @@
     "preversion": "npm run build",
     "hooks": "\\cp .github/hooks/pre-push .git/hooks/pre-push",
     "squash": "node parse-squashed-files.js"
+  },
+  "dependencies": {
+    "grunt-cli": "1.4.3"
   }
 }
