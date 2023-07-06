@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src='LINK_TO_YOUR_PLAYER'></script>
-    <script>jwplayer.key='YOUR_KEY';</script>
+    <script src='/src/js/jwplayer.js' type="module"></script>
+    <!-- FROM http://localhost/etc/clientlibs/vtlibs/jwplayer.50d027fd47bfe61a40ac21b2ec0150bc.js -->
+    <script>jwplayer.key='XQcSLq+jcpNqstz/T8UsuL8JJViYEILN9ebljA==';</script>
 </head>
 <body>
     <div id="player">Loading the player...</div>
     <script>
         // Setup the player
         const player = jwplayer('player').setup({
-            file: 'LINK_TO_YOUR_FILE.mp4'
+            file: '/Users/gabrieltoscano/Documents/vt-edu/jwplayer/test-audio/andy-final.mp3'
         });
 
         // Listen to an event
