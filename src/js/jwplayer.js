@@ -1,11 +1,25 @@
-import 'polyfills/promise';
-import { loadFrom } from './utils/playerutils';
-import instances from './api/players';
-import GlobalApi from 'api/global-api';
-import { registerPlugin } from 'plugins/plugins';
-import { version } from './version';
-import Api from 'api/api';
-import ApiSettings from 'api/api-settings';
+// import '../js/polyfills/promise.js';
+import './polyfills/promise.js'
+
+// import { loadFrom } from './utils/playerutils';
+// import { loadFrom } from '../js/utils/playerutils.js';
+import { loadFrom } from '../js/utils/playerutils.js';
+
+
+// import instances from './api/players';
+import instances from './api/players.js';
+
+// import GlobalApi from 'api/global-api';
+import GlobalApi from '../js/api/global-api.js'
+
+import { registerPlugin } from './plugins/plugins.js'
+
+// import { version } from './version';
+import {version} from '../js/version.js'
+
+import Api from '../js/api/api.js';
+// import ApiSettings from '../js/api/api-settings.js';
+import ApiSettings from './api/api-settings.js';
 
 /* eslint camelcase: 0 */
 // eslint-disable-next-line
