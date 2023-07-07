@@ -5,7 +5,6 @@ import './polyfills/promise.js'
 // import { loadFrom } from '../js/utils/playerutils.js';
 import { loadFrom } from '../js/utils/playerutils.js';
 
-
 // import instances from './api/players';
 import instances from './api/players.js';
 
