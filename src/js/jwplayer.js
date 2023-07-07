@@ -1,5 +1,5 @@
 // import '../js/polyfills/promise.js';
-import './polyfills/promise.js'
+import './polyfills/promise'
 
 // import { loadFrom } from './utils/playerutils';
 // import { loadFrom } from '../js/utils/playerutils.js';
